@@ -1,2 +1,2 @@
 # team2-twitter-clone
-Repliuca de twitter del equipo 2
+Replica de twitter del equipo 2
