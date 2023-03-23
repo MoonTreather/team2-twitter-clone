@@ -381,7 +381,7 @@
     cursor: pointer;
   }
   
-  /* Create Tweet box */
+  /* Create tweet box */
   .post-tweet {
     background: #fff;
     border-bottom: 10px solid rgb(230, 236, 240);
@@ -424,16 +424,24 @@
   }
   
   .post-icons {
-    padding-left: 4rem;
-    color: #1da1f2;
+    padding-left: 5.5rem;
+    color: #1da0f2c2
   }
-  .post-icons i {
-    padding-right: 10px;
-    font-size: 1.4rem;
+  .post-icons .i {
+    padding: 0.7rem 1rem;
+    background: #8ed0f9;
+    color: 1d#a0f2c2;
+    border-radius: 25px;
+    margin-right: 1rem;
+
   }
-  .post-icons i:hover {
-    color: #1da0f2c2;
-    cursor: pointer;
+
+  .post-icons .i:hover {
+    padding: 0.7rem 1rem;
+    background: #8ed0f9;
+    color: 1d#a0f2c2;
+    border-radius: 25px;
+    margin-right: 1rem;
   }
   .form-group-2 .btn {
     border: none;
