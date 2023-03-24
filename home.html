@@ -15,15 +15,15 @@
         <div class="left-flex-container flex-item">
           <div class="nav-links">
             <ul>
-              <li class="nav-items logo"><a href="#"><i class="fab fa-twitter"></i></a></li>
-              <li class="nav-items current-page"><a href="#"><i class="fas fa-home"></i> Home</a></li>
-              <li class="nav-items"><a href="#"><i class="fas fa-hashtag"></i> Explore</a></li>
-              <li class="nav-items"><a href="#"><i class="far fa-bell"></i> Notifications</a></li>
-              <li class="nav-items"><a href="#"><i class="far fa-envelope"></i> Messages</a></li>
-              <li class="nav-items"><a href="#"><i class="far fa-bookmark"></i> Bookmarks</a></li>
-              <li class="nav-items"><a href="#"><i class="far fa-list-alt"></i> Lists</a></li>
-              <li class="nav-items"><a href="#"><i class="far fa-user"></i> Profile</a></li>
-              <li class="nav-items"><a href="#"><i class="fas fa-ellipsis-h more-icon"></i> More</a></li>
+              <li class="nav-items logo"><a href="#"><i data-feather="twitter"></i></a></li>
+              <li class="nav-items current-page"><a href="#"><i data-feather="home"></i> Home</a></li>
+              <li class="nav-items"><a href="#"><i data-feather="hash"></i> Explore</a></li>
+              <li class="nav-items"><a href="#"><i data-feather="bell"></i> Notifications</a></li>
+              <li class="nav-items"><a href="#"><i data-feather="mail"></i> Messages</a></li>
+              <li class="nav-items"><a href="#"><i data-feather="bookmark"></i> Bookmarks</a></li>
+              <li class="nav-items"><a href="#"><i data-feather="archive"></i> Lists</a></li>
+              <li class="nav-items"><a href="#"><i data-feather="user"></i> Profile</a></li>
+              <li class="nav-items"><a href="#"><i data-feather="more-horizontal"></i> More</a></li>
             </ul>
           </div>
           <div class="tweet"><a href="#">Tweet</a></div>
@@ -47,24 +47,22 @@
           <!-- Create tweet box -->
 
           <div class="post-tweet">
-            <form action="">
-              <div class="form-group-1">
+              <div class="group-1">
                 <img src="./img/profile.jpg" alt="profile-pics">
                 <input type="text" placeholder="What's happening?">
               </div>
-              <div class="form-group-2">
+              <div class="group-2">
                 <div class="post-icons">
-                  <i data-feather="image"></i>
-                  <i data-feather="list"></i>
-                  <i data-feather="smile"></i>
-                  <i data-feather="calendar"></i>
-                  <i data-feather="map-pin"></i>
+                  <span><i data-feather="image" width="1.2rem"></i></span>
+                  <span><i data-feather="list" width="1.2rem"></i></span>
+                  <span><i data-feather="smile" width="1.2rem"></i></span>
+                  <span><i data-feather="calendar" width="1.2rem"></i></span>
+                  <span><i data-feather="map-pin" width="1.2rem"></i></span>
                 </div>
                 <button class="btn" type="submit">Tweet</button>
               </div>
-            </form>
-    
           </div>
+
           <!-- User Content -->
             <div class="tweets">
               <div class="user-pics"><img src="./img/user3.jpg" alt="user3"></div>
@@ -158,7 +156,9 @@
       
               </div>
             </div>
-    
+
+            <!-- Section Follow -->
+
             <section class="follow-users-box">
     
               <div class="follow-header">
@@ -260,6 +260,8 @@
               </div>
     
             </section>
+
+            <!-- Fin de sección -->
     
             <div class="tweets">
               <div class="user-pics"><img src="./img/user5.jpg" alt="user5"></div>

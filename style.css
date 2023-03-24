@@ -301,9 +301,9 @@
   /* Create tweet box */
   .post-tweet {
     background: #fff;
-    border-bottom: 10px solid rgb(230, 236, 240);
+    border-bottom: 1px solid rgb(230, 236, 240);
   }
-  .form-group-1 {
+  .group-1 {
     display: flex;
     flex-flow: row;
     padding: 0.3rem 1rem;
@@ -315,9 +315,15 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    align-self: center; 
+    align-self: center;
   }
-  
+
+  .post-tweet img:hover {
+  background-color: rgba(0,0,0,0.8);
+    width: 50px;
+    height: 50px;
+  }
+
   .post-tweet input {
     width: 90%;
     height: 60px;
@@ -332,7 +338,7 @@
   .post-tweet input:focus {
     outline: none;
   }
-  .form-group-2 {
+  .group-2 {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
@@ -341,36 +347,41 @@
   }
   
   .post-icons {
-    padding-left: 5.5rem;
-    color: #1da0f2c2
+    padding-left: 4.5rem;
+    color: #1da0f2c2;
+    display: flex;
+    align-items: center;
+    font-size: 0.2rem;
   }
-  .post-icons .i {
-    padding: 0.7rem 1rem;
-    background: #8ed0f9;
-    color: 1d#a0f2c2;
+  .post-icons span {
+    padding: 0.6rem 0.8rem;
     border-radius: 25px;
-    margin-right: 1rem;
+    margin-right: 0rem;
+    display: flex;
+    align-items: center;
 
   }
 
-  .post-icons .i:hover {
-    padding: 0.7rem 1rem;
-    background: #8ed0f9;
-    color: 1d#a0f2c2;
+
+  .post-icons span:hover {
+    padding: 0.6rem 0.8rem;
+    background: #8ed0f937;
     border-radius: 25px;
-    margin-right: 1rem;
+    margin-right: 0rem;
+    cursor: pointer;
   }
-  .form-group-2 .btn {
+
+  .group-2 .btn {
     border: none;
     font-weight: 600;
     font-size: 1rem;
-    padding: 0.7rem 1rem;
+    padding: 0.6rem 1rem;
     background: #8ed0f9;
     color: #fff;
     border-radius: 25px;
     margin-right: 1rem;
   }
-  .form-group-2 .btn:hover {
+  .group-2 .btn:hover {
     background: #1da1f2;
     cursor: pointer;
     
@@ -648,7 +659,7 @@
     justify-content: space-between;
     padding: 0.5rem 1rem;
     border-bottom: 1px solid rgb(230, 236, 240);
-    border-top: 10px solid rgb(230, 236, 240);
+    border-top: 0px solid rgb(230, 236, 240);
   }
   
   .follow-header i {
