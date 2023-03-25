@@ -361,6 +361,31 @@
     object-fit: contain;
   }
 
+  .profile-links{
+    border-bottom: 1px solid rgb(230, 236, 240);
+  }
+
+  .profile-links th{
+    height: 3.3rem;
+    width: 7.5rem;
+    font-weight: 750;
+    font-size: 1rem;
+  }
+
+  .profile-links th:hover{
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  .profile-section a{
+    color: black;
+  }
+
+  .current-section a{
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.2rem;
+    text-decoration-color: #1da1f2;
+  }
+
 
   /* home panel */
   .home h1 {
@@ -792,15 +817,14 @@
   
   .follow-btn a{
     font-weight: bold;
-    color: rgb(29,161,242);
-    background: #fff;
+    color: white;
+    background: black;
     padding: 0.3rem 1.1rem;
-    border: 1px solid rgba(29,161,242,1.00);
     border-radius: 25px;
   }
   
   .follow-btn a:hover {
-    background:  rgba(29, 161, 242, 0.1);;
+    background: rgba(0, 0, 0, 0.8);
   }
   
   .follow-footer {
