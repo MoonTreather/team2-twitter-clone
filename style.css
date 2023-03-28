@@ -259,10 +259,20 @@
     
   }
 
-  .profile-options .following{
+  .profile-options .follow{
     justify-content: center;
     background: black;
     color: white;
+    width: 6.5rem;
+    padding: 0rem 1rem 0rem 1rem;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .profile-options .following{
+    justify-content: center;
+    background: white;
+    color: black;
     width: 6.5rem;
     padding: 0rem 1rem 0rem 1rem;
     font-size: 15px;
@@ -274,9 +284,21 @@
     color: black;
   }
 
-  .profile-options .following:hover{
+  .profile-options .follow:hover{
     background: rgba(0, 0, 0, 0.8);
     color: white;
+  }
+
+  .profile-options .following:hover {
+    font-size: 0;
+    background: rgba(255, 0, 0, 0.1);
+    border: 0.1rem rgba(255, 0, 0, 0.4) solid;
+    color: rgba(255, 0, 0, 0.8);
+  }
+
+  .profile-options .following:hover:before {
+    font-size: 1rem;
+    content: attr(data-hover);
   }
 
   /* Info biografía */
