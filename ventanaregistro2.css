@@ -1,0 +1,113 @@
+body{
+    background-color: rgb(200, 200, 200);
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #ffffff;
+    width: 550px;
+    height: 650px;
+    border-radius: 20px;
+    box-shadow: 0 10px rgb(110, 110, 110,.2);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box-one{
+    position: relative;
+    width: 500px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    /* display: flex; */
+    justify-content: flex-start;
+}
+
+h1 {
+    display: block; 
+    font-size: 2em;
+    margin-block-start: -0.5em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+.box-two{
+    position: relative;
+    width: 500px;
+    height: 50px;
+    flex-direction: column;
+    justify-content: flex-start;   
+}
+
+.box-three{
+    position: relative;
+    width: 500px;
+    height: 40px;
+}
+
+.box-four{
+    position: relative;
+    width: 500px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+    border: 1px solid #00acee;
+}
+
+
+.box-five{
+    position: relative;
+    width: 490px;
+    height: 150px;
+
+}
+
+button{
+    width: 300px;
+    height: 40px;
+    background-color: black;
+    color:#ffffff;
+    outline: none;
+    font-weight: bold;
+    border: 1px solid rgb(219, 210, 210);
+    border-radius: 20px;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button-color:hover{
+    background: #00acee;
+    /* border: 1px solid #00acee; */
+}
+
+.link {
+    color: #00acee;
+}
