@@ -40,23 +40,68 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="ventanaregistro.css">
     <title>Twitter Crear Cuenta</title>
   </head>
   <body>
-    <div>
-      <h3>Paso 1 de 5</h3>
-      <h1>Crea tu cuenta</h1>
+    <div class="container">
+      <div class="box box-one">
+        <h3>Paso 1 de 5</h3>
+        <h1>Crea tu cuenta</h1>
+      </div>
+      <div class="box box-two">
+        <form>
+          <input type="text" placeholder="Nombre"/>
+        </form>
+        <form>
+          <input type="text" placeholder="Telefono"/>
+        </form>
+      </div> 
+      <div class="box box-three">
+        <p><a href="#">Usar correo</a></p>
+      </div>
+      <div class="box box-four">
+        <h5>Fecha de nacimiento</h5>
+        <p>Esta información no será pública. Confirma tu propia edad, incluso si esta cuenta es para una empresa, una mascota u otra cosa.</p>
+      </div>
+      <div class="box box-five">
+        <form>   
+          <select name="months" id="months">     
+            <option>Mes</option>
+            <option value="enero">Enero</option>
+            <option value="febrero">Febrero</option>
+            <option value="marzo">Marzo</option>
+            <option value="abril">Abril</option>
+            <option value="mayo">Mayo</option>
+            <option value="junio">Junio</option>
+            <option value="julio">Julio</option>
+            <option value="agosto">Agosto</option>
+            <option value="septiembre">Septiembre</option>
+            <option value="octubre">Octubre</option>
+            <option value="noviembre">Noviembre</option>
+            <option value="diciembre">Diciembre</option>
+          </select>
+        </form>
+        <form>
+          <select name="day" id="days">
+            <option>Día</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </form>
+        <form>
+          <select name="ano" id="ano">
+            <option>Año</option>
+            <option value="ano1">2023</option>
+            <option value="ano2">2022</option>
+            <option value="ano3">2021</option>
+            <option value="ano4">2020</option>
+          </select>
+        </form>
+      </div>
+      <button>Siguiente</button>
     </div>
-    <form>
-        <input type="text" placeholder="Nombre"/>
-    </form>
-    <form>
-        <input type="text" placeholder="Telefono"/>
-    </form>
-    <p><a href="#">Usar correo</a></p>
-    <h5>Fecha de nacimiento</h5>
-    <p>Esta información no será pública. Confirma tu propia edad, incluso si esta cuenta es para una empresa, una mascota u otra cosa.</p>
-    <input type="date" id="birthday" name="birthday"><br><br>
-  </body>
+</body>
 </html>
