@@ -145,11 +145,12 @@ body{
     height: 50px;
     outline: none;
     border: 1px solid rgb(211, 210, 210);
+    margin-top: 5px;
     border-radius: 4px;
     padding-left: 0px;
 }
 .box-two input label{
-    position: absolute;
+    position: relative;
     top: 0;
 }
 .box-two input::placeholder{
@@ -179,6 +180,7 @@ body{
     display: flex;
     justify-content: flex-end;
     align-items: left;
+    margin-top: 5px;
 }
 
 .box-four{
@@ -206,4 +208,41 @@ button{
     border-radius: 20px;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
+}
+
+.box-three p a{
+        text-decoration: none;
+        color: #00acee;
+}
+
+
+
+#months{
+    position: relative;
+    left:0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    width: 220px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+#days{
+    position: relative;
+    left:0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    width: 85px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+#ano{
+    position: relative;
+    left:0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    width: 85px;
+    height: 50px;
+    border-radius: 5px;
 }
