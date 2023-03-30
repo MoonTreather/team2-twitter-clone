@@ -529,6 +529,8 @@
     display: block;
     width: 100%;
   }
+
+
   .tweets .user-pics img {
     display: block;
     width: 50px;
@@ -562,6 +564,12 @@
     color: rgb(48, 52, 56);
     font-weight: 400;
     line-height: 1.5;
+  }
+  .user-content .a-link{
+    color: black;
+  }
+  .user-content .a-link:hover{
+    text-decoration: none;
   }
   .user-content a {
     color: rgb(27, 149, 224);
