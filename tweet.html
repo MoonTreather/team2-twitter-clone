@@ -15,15 +15,15 @@
         <div class="left-flex-container flex-item">
           <div class="nav-links">
             <ul>
-              <li class="nav-items logo"><a href="#"><i class="fab fa-twitter"></i></a></li>
-              <li class="nav-items current-page"><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
-              <li class="nav-items"><a href="#"><i class="fas fa-hashtag"></i> Explore</a></li>
-              <li class="nav-items"><a href="#"><i class="far fa-bell"></i> Notifications</a></li>
-              <li class="nav-items"><a href="#"><i class="far fa-envelope"></i> Messages</a></li>
-              <li class="nav-items"><a href="#"><i class="far fa-bookmark"></i> Bookmarks</a></li>
-              <li class="nav-items"><a href="#"><i class="far fa-list-alt"></i> Lists</a></li>
-              <li class="nav-items"><a href="profile.html"><i class="far fa-user"></i> Profile</a></li>
-              <li class="nav-items"><a href="#"><i class="fas fa-ellipsis-h more-icon"></i> More</a></li>
+              <li class="nav-items logo"><a href="#"><i data-feather="twitter"></i></a></li>
+              <li class="nav-items"><a href="home.html"><i data-feather="home"></i> Home</a></li>
+              <li class="nav-items"><a href="#"><i data-feather="hash"></i> Explore</a></li>
+              <li class="nav-items"><a href="#"><i data-feather="bell"></i> Notifications</a></li>
+              <li class="nav-items"><a href="#"><i data-feather="mail"></i> Messages</a></li>
+              <li class="nav-items"><a href="#"><i data-feather="bookmark"></i> Bookmarks</a></li>
+              <li class="nav-items"><a href="#"><i data-feather="archive"></i> Lists</a></li>
+              <li class="nav-items"><a href="profile.html"><i data-feather="user"></i> Profile</a></li>
+              <li class="nav-items"><a href="#"><i data-feather="more-horizontal"></i> More</a></li>
             </ul>
           </div>
 
@@ -40,9 +40,11 @@
         </div>
     
         <div class="center-flex-container flex-item">
-          <div class="home">
-            <h1>Home</h1>
-            <i class="fas fa-magic"></i>
+          <div class="profile-header">
+            <div class="back">
+              <a href="home.html"><i data-feather="arrow-left"></i></a>
+              <h1>Tweet</h1>
+            </div>
           </div>
     
 
@@ -75,11 +77,18 @@
                 <br>
     
                 <div class="content-icons">
-                  <i class="far fa-comment blue"> 19 Retweet</i>
-                  <i class="fas fa-retweet green"> 1 Quotes</i>
-                  <i class="far fa-heart red">1.6k Likes</i>
-                  <i class="fas fa-chevron-up blue">1 Bookmark</i>
-                  
+                  <div class="blue">
+                    <span><i data-feather="message-circle" width="1.2rem"> </i></span> <i>109</i>
+                  </div>
+                  <div class="green">
+                    <span><i data-feather="refresh-cw" width="1.2rem"> </i></span> <i>865</i>
+                  </div>
+                  <div class="red">
+                    <span><i data-feather="heart" width="1.2rem"> </i></span> <i>1.6k</i>
+                  </div>
+                  <div class="blue">
+                    <span><i data-feather="share" width="1.2rem"> </i></span>
+                  </div>            
                 </div>
       
               </div>
@@ -116,7 +125,7 @@
         <!-- Barra trends -->
         <div class="right-flex-container flex-item">
           <div class="search-box">
-            <i class="fas fa-search"></i>
+            <i data-feather="search"></i>
             <input type="text" placeholder="Search Twitter">
           </div>
     
@@ -178,6 +187,53 @@
               </li>
               
               
+              <li class="nav-list"><a href="#">Show more</a></li>
+            </ul>
+          </div>
+
+          <div class="trends">
+            <ul>
+              <li class="nav-list header">
+                <h2>Who to follow</h2>
+                <i class="fas fa-cog">
+              </i>
+              <li class="nav-list">
+                <div class="follow-list">
+                  <img src="./img/user9.jpg">
+                  <div class="follow-info">
+                    <div>
+                      <p class="main-text">Rita Guzman</p>
+                      <p class="sub-text">@ritgzm</p>
+                    </div>
+                    <a class="follow-btn" href="#" id="follow" onclick="change()" data-hover="Unfollow">Follow</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-list">
+                <div class="follow-list">
+                  <img src="./img/user10.jpg">
+                  <div class="follow-info">
+                    <div>
+                      <p class="main-text">Luis Suarez</p>
+                      <p class="sub-text">@SuarzoLui</p>
+                    </div>
+                    <a class="follow-btn" href="#" id="follow2" onclick="change2()" data-hover="Unfollow">Follow</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-list">
+                <div class="follow-list">
+                  <img src="./img/user11.jpg">
+                  <div class="follow-info">
+                    <div>
+                      <p class="main-text">Pete</p>
+                      <p class="sub-text">@unsleepingDD</p>
+                    </div>
+                    <a class="follow-btn" href="#" id="follow3" onclick="change3()" data-hover="Unfollow">Follow</a>
+                  </div>
+                </div>
+              </li>
+  
               <li class="nav-list"><a href="#">Show more</a></li>
             </ul>
           </div>

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clone de Twitter</title>
     <link rel="stylesheet" href="style.css">
-    <!--<link rel="stylesheet" href="all.css">-->
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
@@ -40,7 +39,6 @@
         <div class="center-flex-container flex-item">
           <div class="home">
             <h1>Home</h1>
-            <i class="fas fa-magic"></i>
           </div>
     
 
@@ -75,7 +73,7 @@
                 </div>
                 
                 <div class="user-content">
-                  <p>Super contenta con el curso de UX/UI en Devf, he aprendido muchas cosas nuevas.</p>
+                  <a href="tweet.html" class="a-link">Super contenta con el curso de UX/UI en Devf, he aprendido muchas cosas nuevas.</a>
                 </div>
     
                 <div class="content-icons">
@@ -197,7 +195,6 @@
     
               <div class="follow-header">
                 <h1 class="main-text">Who to follow</h1>
-                <i class="fas fa-chevron-down"></i>
               </div>
     
               <div class="follow-user">
@@ -343,7 +340,7 @@
     
         <div class="right-flex-container flex-item">
           <div class="search-box">
-            <i class="fas fa-search"></i>
+            <i data-feather="search"></i>
             <input type="text" placeholder="Search Twitter">
           </div>
     
@@ -405,6 +402,53 @@
               </li>
               
               
+              <li class="nav-list"><a href="#">Show more</a></li>
+            </ul>
+          </div>
+
+          <div class="trends">
+            <ul>
+              <li class="nav-list header">
+                <h2>Who to follow</h2>
+                <i class="fas fa-cog">
+              </i>
+              <li class="nav-list">
+                <div class="follow-list">
+                  <img src="./img/user9.jpg">
+                  <div class="follow-info">
+                    <div>
+                      <p class="main-text">Rita Guzman</p>
+                      <p class="sub-text">@ritgzm</p>
+                    </div>
+                    <a class="follow-btn" href="#" id="follow" onclick="change()" data-hover="Unfollow">Follow</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-list">
+                <div class="follow-list">
+                  <img src="./img/user10.jpg">
+                  <div class="follow-info">
+                    <div>
+                      <p class="main-text">Luis Suarez</p>
+                      <p class="sub-text">@SuarzoLui</p>
+                    </div>
+                    <a class="follow-btn" href="#" id="follow2" onclick="change2()" data-hover="Unfollow">Follow</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-list">
+                <div class="follow-list">
+                  <img src="./img/user11.jpg">
+                  <div class="follow-info">
+                    <div>
+                      <p class="main-text">Pete</p>
+                      <p class="sub-text">@unsleepingDD</p>
+                    </div>
+                    <a class="follow-btn" href="#" id="follow3" onclick="change3()" data-hover="Unfollow">Follow</a>
+                  </div>
+                </div>
+              </li>
+  
               <li class="nav-list"><a href="#">Show more</a></li>
             </ul>
           </div>
