@@ -64,17 +64,20 @@
     font-size: 2rem;
     padding: 1rem;
   }
+
   .logo i:hover {
     border-radius: 50%;
-    padding: 1rem;
-  }
-  
+    background-color: black;
+  }  
   .nav-links a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
     font-weight: 750;
     color: rgba(20, 23, 26, 0.93);
     padding: 10px 15px;
   }
-  
+    
   .current-page a { color: rgba(29,161,242,1.00);}
   
   .nav-links a:hover {
@@ -83,15 +86,15 @@
     padding: 10px 15px;
     border-radius: 25px;
   }
+  
   .nav-items {
-    margin: 1.2rem 2rem;
     white-space: nowrap;
   }
   .nav-links i {
     padding-right: 0.5rem;
   }
   .nav-links {
-    margin-top: -1rem;
+    margin-top: 1rem;
   }
   
   .tweet a {
@@ -259,7 +262,7 @@
     
   }
 
-  .profile-options .follow{
+  .profile-options .follow-btn{
     justify-content: center;
     background: black;
     color: white;
@@ -284,7 +287,7 @@
     color: black;
   }
 
-  .profile-options .follow:hover{
+  .profile-options .follow-btn:hover{
     background: rgba(0, 0, 0, 0.8);
     color: white;
   }
@@ -647,9 +650,13 @@
   
   /* Right Navbar */
   .search-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #39393a8e;
     border: none;
     border-radius: 25px;
-    padding: 0.1rem 1rem;
+    padding: 0.1rem 0.5rem;
     background: rgb(230, 236, 240);
     margin-top: 0.5rem;
     white-space: nowrap;
@@ -667,7 +674,7 @@
     background: rgb(230, 236, 240);
   }
   
-  /* Trending Nav Items */
+  /* Trending -i Items */
   .nav-list {
     display: flex;
     flex-flow: row nowrap;
@@ -896,4 +903,78 @@
   }
   .pagnation a:hover {
     background: #198ed6;
+  }
+
+  /* Who to follow list right bar */
+  .follow-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .follow-list img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+  }
+  .follow-list .follow-info{
+    width: 16rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 1rem;
+  }
+
+  .follow-list a{
+    width: 2.125rem;
+    height: 2.125rem;
+    display: flex;
+    align-items: center;
+    padding: 0.2rem 0.4rem;
+    color: black;
+    border-radius: 10rem;
+    border: 0.1rem rgba(0, 0, 0, 0.1) solid;
+  }
+
+  .follow-list .follow-btn{
+    justify-content: center;
+    background: black;
+    color: white;
+    width: 6.5rem;
+    padding: 0rem 1rem 0rem 1rem;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .follow-list .following{
+    justify-content: center;
+    background: white;
+    color: black;
+    width: 6.5rem;
+    padding: 0rem 1rem 0rem 1rem;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .follow-list a:hover{
+    background: rgba(67, 72, 76, 0.1);
+    color: black;
+  }
+
+  .follow-list .follow-btn:hover{
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+  }
+
+  .follow-list .following:hover {
+    font-size: 0;
+    background: rgba(255, 0, 0, 0.1);
+    border: 0.1rem rgba(255, 0, 0, 0.4) solid;
+    color: rgba(255, 0, 0, 0.8);
+  }
+
+  .follow-list .following:hover:before {
+    font-size: 1rem;
+    content: attr(data-hover);
   }

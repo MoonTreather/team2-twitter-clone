@@ -58,7 +58,7 @@
               <a href="#"><i data-feather="more-horizontal"></i></a>
               <a href="#"><i data-feather="mail"></i></a>
               <a href="#"><i data-feather="bell"></i></a>
-              <a class="follow" href="#" id="follow-btn" onclick="changeButton()" data-hover="Unfollow">Follow</a>
+              <a class="follow-btn" href="#" id="follow-btn" onclick="changeButton()" data-hover="Unfollow">Follow</a>
             </div>
           </div>
 
@@ -264,7 +264,7 @@
                       <div class="user-name"><p class="sub-text">@Linda_shelton</p></div>
                     </div>
   
-                    <div class="follow-btn"><a href="#">follow</a></div>
+                    <div class="follow-btn" id="follow-btn" onclick="changeButton()" data-hover="Unfollow"><a href="#">follow</a></div>
   
                   </div>
                   <div class="bio-container">
@@ -293,7 +293,7 @@
                       <div class="user-name"><p class="sub-text">@Gavinjohnson</p></div>
                     </div>
   
-                    <div class="follow-btn"><a href="#">follow</a></div>
+                    <div class="follow-btn" id="follow-btn" onclick="changeButton()" data-hover="Unfollow"><a href="#">follow</a></div>
   
                   </div>
                   <div class="bio-container">
@@ -322,7 +322,7 @@
                       <div class="user-name"><p class="sub-text">@Iamwilliamd_shelton</p></div>
                     </div>
   
-                    <div class="follow-btn"><a href="#">follow</a></div>
+                    <div class="follow-btn" id="follow-btn" onclick="changeButton()" data-hover="Unfollow"><a href="#">follow</a></div>
   
                   </div>
                   <div class="bio-container">
@@ -391,7 +391,7 @@
   
       <div class="right-flex-container flex-item">
         <div class="search-box">
-          <i class="fas fa-search"></i>
+          <i data-feather="search"></i>
           <input type="text" placeholder="Search Twitter">
         </div>
   
@@ -453,6 +453,53 @@
             </li>
             
             
+            <li class="nav-list"><a href="#">Show more</a></li>
+          </ul>
+        </div>
+
+        <div class="trends">
+          <ul>
+            <li class="nav-list header">
+              <h2>Who to follow</h2>
+              <i class="fas fa-cog">
+            </i>
+            <li class="nav-list">
+              <div class="follow-list">
+                <img src="./img/user9.jpg">
+                <div class="follow-info">
+                  <div>
+                    <p class="main-text">Rita Guzman</p>
+                    <p class="sub-text">@ritgzm</p>
+                  </div>
+                  <a class="follow-btn" href="#" id="follow" onclick="change()" data-hover="Unfollow">Follow</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-list">
+              <div class="follow-list">
+                <img src="./img/user10.jpg">
+                <div class="follow-info">
+                  <div>
+                    <p class="main-text">Luis Suarez</p>
+                    <p class="sub-text">@SuarzoLui</p>
+                  </div>
+                  <a class="follow-btn" href="#" id="follow2" onclick="change2()" data-hover="Unfollow">Follow</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-list">
+              <div class="follow-list">
+                <img src="./img/user11.jpg">
+                <div class="follow-info">
+                  <div>
+                    <p class="main-text">Pete</p>
+                    <p class="sub-text">@unsleepingDD</p>
+                  </div>
+                  <a class="follow-btn" href="#" id="follow3" onclick="change3()" data-hover="Unfollow">Follow</a>
+                </div>
+              </div>
+            </li>
+
             <li class="nav-list"><a href="#">Show more</a></li>
           </ul>
         </div>
